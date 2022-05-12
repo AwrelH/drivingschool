@@ -11,15 +11,41 @@
   h3 {
     font-family: Alike, Epilogue, sans-serif;
   }
-  p {
-      font-size: 1.5rem;
-  }
-  li {
+  
+  li, a {
       list-style:none ;
+      text-decoration: none;
+      
   }
   .nav-bar {
     background-color: #91e0c6;
     letter-spacing: 2px;
-    font-weight: 500;
     text-transform: uppercase;
+     }
+     .nav-bar ul {
+         display: flex;
+         text-align: center;
+         justify-content: space-around;
+         height: 3rem;
+         align-items: center;
+     }
+     #welcome {
+        font-size: 3rem;
+        text-align: center;
+     }
+
+
+/* main section/freedom-section */
+
+.freedom-section {
+    display: flex;
+    justify-content: center;
+    background-color: #e9f1e4;
+    padding: 30px 0;
+  }
+  .text-container {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    max-width: 600px;
   }
