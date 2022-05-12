@@ -5,71 +5,99 @@
 * {
     box-sizing: border-box;
     margin: 0;
-  }
-  h1,
-  h2,
-  h3 {
+   
+}
+
+h1,
+h2,
+h3 {
     font-family: Alike, Epilogue, sans-serif;
-  }
-  
-  li, a {
-      list-style:none ;
-      text-decoration: none;
-      font-family: Epilogue, sans-serif;
-      font-weight: 500;
-      
-  }
-  .nav-bar {
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    font-family: Epilogue, sans-serif;
+    font-weight: 500;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/* navigation bar and header */
+.nav-bar {
     background-color: #91e0c6;
     letter-spacing: 2px;
     text-transform: uppercase;
-     }
-     .nav-bar ul {
-         display: flex;
-         text-align: center;
-         justify-content: space-around;
-         height: 3rem;
-         align-items: center;
-     }
-     #welcome {
-        font-size: 3rem;
-        text-align: center;
-     }
+}
+
+.nav-bar ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    height: 3rem;
+    align-items: center;
+}
+
+#welcome {
+    font-size: 3rem;
+    text-align: center;
+}
 
 
 /* main section/freedom-section */
 
 .freedom-section {
-    display: flex;
+    
     justify-content: center;
     background-color: #e9f1e4;
-    
-  }
-  .text-container  {
+
+}
+.main-container {
+    display:flex;
+}
+
+.text-container {
     padding: 30px;
     align-items: center;
     max-width: 600px;
-  }
-  h2 p {
+    justify-content: center;
+    
+}
+image
 
-  }
-
-  /* map and address section */
-  #table {
+/* map and address section */
+#table {
     font-size: x-large;
     font-family: Open-sans, sans-serif;
     margin-right: 4rem;
     width: 100%;
     padding: 10px;
     background-color: rgba(211, 211, 211, 0.2);
-  }
-  
-  th {
+}
+
+th {
     text-align: end;
     padding-right: 12px;
-  }
-  .address li {
-    margin: 12px;
-  }
+}
 
-  /* footer section */
+.address li {
+    margin: 12px;
+}
+
+/* footer section */
+
+footer ul {
+    display: flex;
+    background-color: #91e0c6;
+    justify-content: center;
+    justify-content: space-around;
+    height: 3rem;
+    
+}
+footer a {
+    font-size: 2rem;
+}
