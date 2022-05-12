@@ -1,0 +1,25 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alike&family=Epilogue&family=Open+Sans&display=swap");
+
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: Alike, Epilogue, sans-serif;
+  }
+  p {
+      font-size: 1.5rem;
+  }
+  li {
+      list-style:none ;
+  }
+  .nav-bar {
+    background-color: #91e0c6;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
