@@ -67,9 +67,16 @@ img {
     justify-content: center;
     
 }
-image
+
 
 /* map and address section */
+.map-container {
+    display: flex;
+    align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
 #table {
     font-size: x-large;
     font-family: Open-sans, sans-serif;
@@ -77,6 +84,7 @@ image
     width: 100%;
     padding: 10px;
     background-color: rgba(211, 211, 211, 0.2);
+    
 }
 
 th {
