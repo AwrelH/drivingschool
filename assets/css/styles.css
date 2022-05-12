@@ -77,10 +77,10 @@ img {
   padding: 20px;
 }
 
-#table {
-    font-size: x-large;
-    font-family: Open-sans, sans-serif;
-    margin-right: 4rem;
+#address {
+    font-size: large;
+    font-family:sans-serif;
+    margin-right: 2rem;
     width: 100%;
     padding: 10px;
     background-color: rgba(211, 211, 211, 0.2);
@@ -98,12 +98,16 @@ th {
 
 /* footer section */
 
-footer ul {
-    display: flex;
-    background-color: #91e0c6;
-    justify-content: center;
-    justify-content: space-around;
-    height: 3rem;
+footer  {
+        background-color: #91e0c6;
+  text-align:center;
+    padding: 20px;
+    
+}
+footer li {
+    display: inline;
+    font-size: large;
+    margin: 4%;
     
 }
 footer a {
