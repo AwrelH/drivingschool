@@ -11,7 +11,7 @@ h1,
 h2,
 h3 {
   font-family: Alike, Epilogue, sans-serif;
-  margin-bottom: 5px;
+  
 }
 
 p {
@@ -61,13 +61,15 @@ body {
 }
 
 #welcome {
+  
   font-size: 3rem;
   text-align: center;
-
+  text-decoration: 4px underline black;
   background: linear-gradient(
     0deg,
-    rgba(232, 243, 241, 1) 50%,
-    rgba(145, 224, 198, 1) 100%
+    rgba(145, 224, 198, 1) 0%,
+    rgba(232, 243, 241, 1) 100%
+    
   );
 }
 
@@ -91,6 +93,10 @@ body {
   align-items: center;
   max-width: 600px;
   justify-content: center;
+}
+
+.text-container h2 {
+  margin-bottom: 7px;
 }
 
 
