@@ -5,7 +5,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-
 }
 
 h1,
@@ -26,7 +25,6 @@ a {
   text-decoration: none;
   font-family: Epilogue, sans-serif;
   font-weight: 500;
-
 }
 
 nav-bar a:hover {
@@ -50,6 +48,10 @@ body {
   font-size: 1.5rem;
 }
 
+.nav-bar li a:hover {
+  border-bottom: 3px solid red;
+}
+
 .nav-bar ul {
   display: flex;
   text-align: center;
@@ -62,11 +64,12 @@ body {
   font-size: 3rem;
   text-align: center;
 
-  background: linear-gradient(0deg,
-      rgba(232, 243, 241, 1) 50%,
-      rgba(145, 224, 198, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 243, 241, 1) 50%,
+    rgba(145, 224, 198, 1) 100%
+  );
 }
-
 
 /* main section/freedom-section */
 .main-container {
@@ -76,30 +79,20 @@ body {
 }
 
 .freedom-section {
-  font-family: ;
+  display: flex;
   justify-content: center;
+  justify-items: center;
   background-color: #e9f1e4;
-
 }
 
-
 .text-container {
+  display: flex;
   padding: 30px;
   align-items: center;
   max-width: 600px;
   justify-content: center;
-
 }
 
-.ouroffers a {
-  color: red;
-}
-
-#ouroffers a:hover {
-  text-decoration: dotted;
-
-
-}
 
 /* map and address section */
 #map-section {
@@ -120,7 +113,6 @@ body {
   width: 100%;
   padding: 10px;
   background-color: rgba(211, 211, 211, 0.2);
-
 }
 
 th {
@@ -138,14 +130,12 @@ footer {
   background-color: #91e0c6;
   text-align: center;
   padding: 20px;
-
 }
 
 footer li {
   display: inline;
   font-size: large;
   margin: 4%;
-
 }
 
 footer a {
@@ -157,18 +147,23 @@ footer a {
 /* For medium screens size from 950px wide and down */
 @media screen and (max-width: 950px) {
   .nav-bar ul {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
-  .freedom-section,
-  #map-section {
-    display: grid;
-    padding: 10px;
+  .freedom-section {
+        padding: 10px;
   }
 
   .text-container {
     padding: 10px;
+    
+  }
+  .skip-order {
+    order:-1;
+  }
 
+  .map-container {
+    display: grid;
   }
 
   #welcome {
@@ -178,19 +173,19 @@ footer a {
 
 /* For small screens size from 800px wide and down */
 @media screen and (max-width: 800px) {
-
+   #welcome {
+    font-size: 1.5rem;
+  }
   .nav-bar ul {
     width: 100%;
   }
-
-
-  #map-section {
-    font-size: 1rem;
-  }
-
-  #welcome {
-    font-size: 1.5rem;
-  }
+  .freedom-section {
+    display:grid;
+    padding: 10px;
+}
+.skip-order {
+  order:1;
+}
 }
 
 /* For small screens size from 650px wide and down */
@@ -200,30 +195,31 @@ footer a {
     display: inline-block;
     width: 100%;
     font-size: 1rem;
-    padding: 4px;
+    padding: 10px;
   }
-
-  iframe {
-    width: 450px;
-    height: 250px;
-  }
-  .text-container {
-    order:1;
-  }
-
-  .main-container {
-    display: grid;
-      }
-          
-  #map-container {
-    display:block;
-      }
 
   #welcome {
     font-size: 1rem;
   }
 
+  .main-container {
+    display: grid;
+  }
+
+  .text-container {
+    order: 1;
+  }
+
+  .map-container {
+    display: grid;
+  }
+
+  iframe {
+    width: 400px;
+    height: 250px;
+  }
 }
+
 @media screen and (max-width: 400px) {
   iframe {
     width: 250px;
