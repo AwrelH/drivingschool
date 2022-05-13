@@ -151,6 +151,7 @@ footer a {
   }
 
   .freedom-section {
+    display:flex;
         padding: 10px;
   }
 
@@ -158,10 +159,7 @@ footer a {
     padding: 10px;
     
   }
-  .skip-order {
-    order:-1;
-  }
-
+  
   .map-container {
     display: grid;
   }
@@ -184,7 +182,7 @@ footer a {
     padding: 10px;
 }
 .skip-order {
-  order:1;
+  order: -1;
 }
 }
 
