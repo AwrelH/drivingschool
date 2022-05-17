@@ -59,6 +59,9 @@ body {
   height: 3rem;
   align-items: center;
 }
+.active {
+  border-bottom: 3px solid blue;
+}
 
 #welcome {
   
