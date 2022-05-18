@@ -2,123 +2,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Alike&family=Epilogue&family=Open+Sans&display=swap");
 
 /* General styling */
-* {
+html {
   box-sizing: border-box;
-  margin: 0;
+  font-size: 1rem;
+  background-color: rgb(236, 233, 233);
 }
 
-h1,
-h2,
-h3 {
-  font-family: Alike, Epilogue, sans-serif;
-  
-}
-
-p {
-  font-family: Epilogue, sans-serif;
-  line-height: 1.5rem;
-}
-
-li,
-a {
-  list-style: none;
-  text-decoration: none;
-  font-family: Epilogue, sans-serif;
-  font-weight: 500;
-}
-
-nav-bar a:hover {
-  border-bottom: 2px solid red;
-}
-
-img {
-  max-width: 100%;
-  margin: 10px;
-}
-
-body {
-  background-color: #e8f3f1;
-}
-
-/* navigation bar and header */
-.nav-bar {
-  background-color: #91e0c6;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
-.nav-bar li a:hover {
-  border-bottom: 3px solid red;
-}
-
-.nav-bar ul {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  height: 3rem;
-  align-items: center;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 .active {
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid red;
 }
-
-#welcome {
-  
-  font-size: 3rem;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Alike, Epilogue, sans-serif;
+  margin: 0 auto;
+}
+/* Welcome and navigation bar */
+#welcome h1 {
+  font-size: 4rem;
   text-align: center;
-  text-decoration: 4px underline black;
-  background: linear-gradient(
-    0deg,
-    rgba(145, 224, 198, 1) 0%,
-    rgba(232, 243, 241, 1) 100%
-    
-  );
+  margin: 10px 0;
+}
+.nav-bar ul {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
 }
 
-/* main section/freedom-section */
-.main-container {
+.nav-bar li {
   display: flex;
+  list-style: none;
+  width: 100%;
+  height: 2rem;
   align-items: center;
   justify-content: center;
 }
-
+.nav-bar li a {
+  text-decoration: none;
+}
+.nav-bar li:hover {
+  width: 100%;
+  background-color: bisque;
+}
+/* main section */
+.frame {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  background-color: bisque;
+  padding: 10px;
+  gap: 20px;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
 .freedom-section {
   display: flex;
-  justify-content: center;
-  justify-items: center;
-  background-color: #e9f1e4;
-}
-
-.text-container {
-  display: flex;
-  padding: 30px;
   align-items: center;
-  max-width: 600px;
-  justify-content: center;
 }
 
-.text-container h2 {
-  margin-bottom: 7px;
+.text-part {
+  padding: 0 20px;
 }
-
-
-/* map and address section */
+/* Map-section */
 #map-section {
+  height: auto;
+  max-width: 1200px;
   display: flex;
-  justify-content: center;
-}
-
-.map-container {
-  display: flex;
+  margin: 40px auto;
   align-items: center;
-  padding: 20px;
+  justify-content: space-around;
 }
-
+iframe {
+  width: 600px;
+  height: 400px;
+}
 #address {
-  font-size: large;
+  font-size: 1.5rem;
   font-family: sans-serif;
-  margin-right: 2rem;
   width: 100%;
   padding: 10px;
   background-color: rgba(211, 211, 211, 0.2);
@@ -129,8 +99,21 @@ th {
   padding-right: 12px;
 }
 
-.address li {
-  margin: 12px;
+/* footer and social media */
+footer {
+  background-color: #91e0c6;
+  text-align: center;
+  padding: 20px;
+}
+
+footer li {
+  display: inline;
+  font-size: large;
+  margin: 4%;
+}
+
+footer a {
+  font-size: 2rem;
 }
 
 /* footer section */
@@ -160,15 +143,15 @@ footer a {
   }
 
   .freedom-section {
-    display:flex;
-        padding: 10px;
+    display: flex;
+    padding: 10px;
   }
 
   .text-container {
     padding: 10px;
-    
+
   }
-  
+
   .map-container {
     display: grid;
   }
@@ -180,19 +163,22 @@ footer a {
 
 /* For small screens size from 800px wide and down */
 @media screen and (max-width: 800px) {
-   #welcome {
+  #welcome {
     font-size: 1.5rem;
   }
+
   .nav-bar ul {
     width: 100%;
   }
+
   .freedom-section {
-    display:grid;
+    display: grid;
     padding: 10px;
-}
-.skip-order {
-  order: -1;
-}
+  }
+
+  .skip-order {
+    order: -1;
+  }
 }
 
 /* For small screens size from 650px wide and down */
