@@ -22,7 +22,7 @@ h3 {
 }
 
 p {
-  font-family: Lato, Poppins, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .active {
@@ -97,7 +97,10 @@ img {
   padding: 0 20px;
   max-width: 600px;
 }
-
+#ouroffers:hover {
+  background-color: antiquewhite;
+  letter-spacing: 2px;
+}
 /* Map-section */
 .map-container {
   display: flex;
@@ -164,7 +167,9 @@ footer li {
 /* media queries medium */
 
 /* For medium screens size from 1200px wide and bigger  */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+
+}
 
 /* For medium screens size from 950px wide and smaller */
 @media screen and (max-width: 950px) {
@@ -209,7 +214,10 @@ footer li {
     display: grid;
     padding: 10px;
   }
-
+img {
+  width:100%;
+  max-width: 600px;
+}
 
   .freedom-section .skip-order {
     display: grid;
