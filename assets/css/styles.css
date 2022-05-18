@@ -1,11 +1,11 @@
 /* Google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Alike&family=Epilogue&family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Macondo&family=Poppins&family=Yanone+Kaffeesatz&display=swap');
 
 /* General styling */
 html {
   box-sizing: border-box;
   font-size: 1rem;
-  background-color: rgb(236, 233, 233);
+
 }
 
 *,
@@ -13,27 +13,46 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "Abril Fatface", Lato, Macondo, sans-serif;
+  margin-bottom:0;
+}
+
+p {
+  font-family: Lato, Poppins, sans-serif;
+}
+
 .active {
   border-bottom: 3px solid red;
 }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Alike, Epilogue, sans-serif;
   margin: 0 auto;
 }
+
 /* Welcome and navigation bar */
 #welcome h1 {
   font-size: 4rem;
   text-align: center;
-  margin: 10px 0;
+  margin: 0 auto;
+  padding-top: 10px;
+  background-color: bisque;
+  max-width: 1200px;
 }
+
 .nav-bar ul {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
   max-width: 1200px;
+  font-family: Lato, sans-serif;
+  font-size: 2rem;
   padding: 0;
 }
 
@@ -41,30 +60,34 @@ body {
   display: flex;
   list-style: none;
   width: 100%;
-  height: 2rem;
   align-items: center;
   justify-content: center;
 }
+
 .nav-bar li a {
   text-decoration: none;
 }
+
 .nav-bar li:hover {
   width: 100%;
   background-color: bisque;
 }
+
 /* main section */
 .frame {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   background-color: bisque;
-  padding: 10px;
+  padding: 20px 10px 0;
   gap: 20px;
 }
+
 img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
 }
+
 .freedom-section {
   display: flex;
   align-items: center;
@@ -72,26 +95,30 @@ img {
 
 .text-part {
   padding: 0 20px;
+  max-width: 600px;
 }
+
 /* Map-section */
-#map-section {
+.map-container {
+  display: flex;
   height: auto;
   max-width: 1200px;
-  display: flex;
   margin: 40px auto;
   align-items: center;
   justify-content: space-around;
 }
+
 iframe {
   width: 600px;
   height: 400px;
-}
+  }
+
 #address {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: sans-serif;
-  width: 100%;
   padding: 10px;
   background-color: rgba(211, 211, 211, 0.2);
+  width: 100%;
 }
 
 th {
@@ -104,17 +131,13 @@ footer {
   background-color: #91e0c6;
   text-align: center;
   padding: 20px;
-}
+  }
 
 footer li {
-  display: inline;
-  font-size: large;
-  margin: 4%;
-}
+    list-style-type: none;
+ }
 
-footer a {
-  font-size: 2rem;
-}
+
 
 /* footer section */
 
@@ -122,24 +145,35 @@ footer {
   background-color: #91e0c6;
   text-align: center;
   padding: 20px;
+  margin: 0;
 }
 
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  padding:0;
+}
+
+footer li a {
+  font-size: 3rem;
+}
 footer li {
-  display: inline;
-  font-size: large;
-  margin: 4%;
-}
-
-footer a {
-  font-size: 2rem;
+  margin:0;
 }
 
 /* media queries medium */
 
-/* For medium screens size from 950px wide and down */
+/* For medium screens size from 1200px wide and bigger  */
+@media screen and (min-width: 1200px) {}
+
+/* For medium screens size from 950px wide and smaller */
 @media screen and (max-width: 950px) {
   .nav-bar ul {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .frame {
+    gap: 0;
   }
 
   .freedom-section {
@@ -156,15 +190,15 @@ footer a {
     display: grid;
   }
 
-  #welcome {
-    font-size: 2rem;
+  #welcome h1 {
+    font-size: 2.5rem;
   }
 }
 
-/* For small screens size from 800px wide and down */
+/* For small screens size from 800px wide and smaller */
 @media screen and (max-width: 800px) {
-  #welcome {
-    font-size: 1.5rem;
+  #welcome h1 {
+    font-size: 2rem;
   }
 
   .nav-bar ul {
@@ -176,31 +210,26 @@ footer a {
     padding: 10px;
   }
 
-  .skip-order {
+
+  .freedom-section .skip-order {
+    display: grid;
     order: -1;
+  }
+  .text-part{
+    padding:0;
   }
 }
 
-/* For small screens size from 650px wide and down */
+/* For small screens size from 650px wide and smaller */
 
 @media screen and (max-width: 650px) {
   .nav-bar ul {
     display: inline-block;
     width: 100%;
-    font-size: 1rem;
-    padding: 10px;
-  }
+    }
 
-  #welcome {
-    font-size: 1rem;
-  }
-
-  .main-container {
-    display: grid;
-  }
-
-  .text-container {
-    order: 1;
+  #welcome h1 {
+    font-size: 1.5rem;
   }
 
   .map-container {
@@ -213,9 +242,14 @@ footer a {
   }
 }
 
+/* For small screens size from 400px wide and smaller */
+
 @media screen and (max-width: 400px) {
   iframe {
-    width: 250px;
+    width: 254px;
     height: 150px;
+  }
+  #address {
+    font-size: small;
   }
 }
