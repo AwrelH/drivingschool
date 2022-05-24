@@ -1,11 +1,10 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Macondo&family=Poppins&family=Yanone+Kaffeesatz&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Macondo&family=Poppins&family=Yanone+Kaffeesatz&display=swap");
 
 /* General styling */
 html {
   box-sizing: border-box;
-  font-size: 1rem;
-
+  font-size: 1em;
 }
 
 *,
@@ -15,14 +14,19 @@ html {
 }
 
 h1,
-h2,
 h3 {
-  font-family: "Abril Fatface", Lato, Macondo, sans-serif;
-  margin-bottom:0;
+  font-family: "Abril Fatface", Lato, sans-serif;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: Lato, sans-serif;
+  margin: 0;
 }
 
 p {
   font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
 }
 
 .active {
@@ -52,7 +56,7 @@ body {
   width: 100%;
   max-width: 1200px;
   font-family: Lato, sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 0;
 }
 
@@ -66,6 +70,7 @@ body {
 
 .nav-bar li a {
   text-decoration: none;
+  padding: 10px;
 }
 
 .nav-bar li:hover {
@@ -97,10 +102,11 @@ img {
   padding: 0 20px;
   max-width: 600px;
 }
+
 #ouroffers:hover {
-  background-color: antiquewhite;
   letter-spacing: 2px;
 }
+
 /* Map-section */
 .map-container {
   display: flex;
@@ -114,7 +120,7 @@ img {
 iframe {
   width: 600px;
   height: 400px;
-  }
+}
 
 #address {
   font-size: 1.2rem;
@@ -134,62 +140,46 @@ footer {
   background-color: #91e0c6;
   text-align: center;
   padding: 20px;
-  }
-
-footer li {
-    list-style-type: none;
- }
-
-
-
-/* footer section */
-
-footer {
-  background-color: #91e0c6;
-  text-align: center;
-  padding: 20px;
-  margin: 0;
 }
 
 footer ul {
   display: flex;
   justify-content: space-around;
-  padding:0;
+  padding: 0;
 }
 
-footer li a {
-  font-size: 3rem;
-}
 footer li {
-  margin:0;
+  list-style-type: none;
+  margin: 0;
+}
+
+footer a {
+  font-size: 3rem;
 }
 
 /* media queries medium */
 
 /* For medium screens size from 1200px wide and bigger  */
 @media screen and (min-width: 1200px) {
-
 }
 
 /* For medium screens size from 950px wide and smaller */
 @media screen and (max-width: 950px) {
   .nav-bar ul {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
   .frame {
     gap: 0;
-    padding:0;
+    padding: 0;
   }
 
   .freedom-section {
     display: flex;
-   
   }
 
   .text-container {
     padding: 10px;
-
   }
 
   .map-container {
@@ -215,17 +205,19 @@ footer li {
     display: grid;
     padding: 10px;
   }
-img {
-  width:100%;
-  max-width: 650px;
-}
+
+  img {
+    width: 100%;
+    max-width: 650px;
+  }
 
   .freedom-section .skip-order {
     display: grid;
     order: -1;
   }
-  .text-part{
-    padding:0;
+
+  .text-part {
+    padding: 0;
   }
 }
 
@@ -235,10 +227,10 @@ img {
   .nav-bar ul {
     display: inline-block;
     width: 100%;
-    }
+  }
 
   #welcome h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .map-container {
@@ -258,6 +250,7 @@ img {
     width: 254px;
     height: 150px;
   }
+
   #address {
     font-size: small;
   }
