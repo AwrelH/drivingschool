@@ -179,11 +179,12 @@ footer li {
 
   .frame {
     gap: 0;
+    padding:0;
   }
 
   .freedom-section {
     display: flex;
-    padding: 10px;
+   
   }
 
   .text-container {
@@ -216,7 +217,7 @@ footer li {
   }
 img {
   width:100%;
-  max-width: 600px;
+  max-width: 650px;
 }
 
   .freedom-section .skip-order {
