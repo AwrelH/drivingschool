@@ -157,6 +157,55 @@ footer a {
   font-size: 3rem;
 }
 
+/* ____________________contact.html____________________ */
+.text-contact {
+}
+.form-frame {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: bisque;
+}
+input[type="text"],
+[type="email"],
+[type="number"] {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+input[type="checkbox"] {
+  margin: 10px;
+  scale: 1.5;
+}
+
+input:hover {
+  background-color: rgb(176, 241, 220);
+}
+.form-title {
+  font-size: 1.5rem;
+  font-family: Lato, sans-serif;
+}
+label {
+  font-size: 1.2rem;
+}
+#other {
+  margin: 12px 0 0;
+}
+textarea {
+  margin: 0;
+  max-width: 300px;
+}
+#send {
+  width: 70%;
+  padding: 20px;
+  font-size: 2rem;
+  border: inset;
+  border-radius: 20px;
+  background-color: #91e0c6;
+  margin-top: 10px;
+}
+
+
 /* media queries medium */
 
 /* For medium screens size from 1200px wide and bigger  */
@@ -190,6 +239,7 @@ footer a {
     font-size: 2.5rem;
   }
 }
+
 
 /* For small screens size from 800px wide and smaller */
 @media screen and (max-width: 800px) {
