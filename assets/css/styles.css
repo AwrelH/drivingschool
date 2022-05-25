@@ -156,6 +156,7 @@ footer li {
 footer a {
   font-size: 3rem;
 }
+
 /* ____________________ offers.html ____________________ */
 
 /* Text-offer */
@@ -163,6 +164,7 @@ footer a {
   display: flex;
   flex: 2;
 }
+
 .offer {
   text-align: center;
   max-width: 600px;
@@ -172,21 +174,24 @@ footer a {
 .image-offers {
   max-width: 400px;
 }
+
 progress {
-  scale:1.2;
+  scale: 1.2;
 }
+
 /* packages offers */
 .packages {
   display: flex;
   justify-content: center;
-  padding:30px;
-flex: 1fr 1fr 1fr;
+  padding: 30px;
+  flex: 1fr 1fr 1fr;
 }
+
 .silver,
 .gold,
 .platinum {
-    border:2px solid gold;
-  padding:5px;
+  border: 2px solid gold;
+  padding: 5px;
   text-align: center;
   background-color: chocolate;
   margin: 10px;
@@ -199,60 +204,71 @@ flex: 1fr 1fr 1fr;
   justify-content: center;
   flex-wrap: wrap;
   padding: 50px;
-  
-  
-  
+
+
+
 }
+
 .flo {
   display: flex;
   align-items: center;
   width: 800px;
   margin-left: 20px;
-  
+
 }
 
 .student-pic:first {
   border-radius: 100%;
-  width:200px;
+  width: 200px;
   height: 200px;
   float: inline-start;
-  margin-right:20px;
-  
+  margin-right: 20px;
+
 }
+
 .student-pic:last-of-type {
   border-radius: 100%;
-  width:200px;
+  width: 200px;
   height: 200px;
   float: right;
-  margin-right:20px;
-  
+  margin-right: 20px;
+
 }
 
 /* ____________________ generalinfo.html ____________________ */
 .good-to-know-text h1 {
   font-size: 4rem;
-  text-align: center; 
-  text-decoration: underline; 
-}
-.good-to-know-text h3 {
-  font-size: 2rem;
-  
-}
-.good-to-know-text h2 {
   text-align: center;
-  margin:0;
+  text-decoration: underline;
 }
 
+.good-to-know-text h3 {
+  font-size: 2rem;
+
+}
+
+.good-to-know-text h2 {
+  text-align: center;
+  margin: 0;
+}
+
+#roadmap {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 
 /* ____________________contact.html____________________ */
-.text-contact {
-}
+.text-contact {}
+
 .form-frame {
   max-width: 800px;
   margin: 20px auto;
   background-color: bisque;
 }
+
 input[type="text"],
 [type="email"],
 [type="number"] {
@@ -262,6 +278,7 @@ input[type="text"],
   margin-bottom: 8px;
   border-radius: 5px;
 }
+
 input[type="checkbox"] {
   margin: 10px;
   scale: 1.5;
@@ -270,21 +287,26 @@ input[type="checkbox"] {
 input:hover {
   background-color: rgb(176, 241, 220);
 }
+
 .form-title {
   font-size: 1.5rem;
   font-family: Lato, sans-serif;
 }
+
 label {
   font-size: 1.2rem;
   margin-bottom: 4px;
 }
+
 #other {
   margin: 12px 0 0;
 }
+
 textarea {
   margin: 0;
   max-width: 537px;
 }
+
 #send {
   width: 70%;
   padding: 20px;
@@ -305,21 +327,25 @@ textarea {
   background-size: cover;
   background-color: rgb(182, 182, 182, 0.5);
 }
-.text-contact {
-}
+
+.text-contact {}
+
 .form-frame {
   max-width: 800px;
   margin: 20px auto;
   background-color: bisque;
 }
+
 .form-title {
   font-size: 1.5rem;
   font-family: Lato, sans-serif;
 }
+
 label {
   font-size: 1.2rem;
   margin-bottom: 4px;
 }
+
 input[type="text"],
 [type="email"],
 [type="number"] {
@@ -329,6 +355,7 @@ input[type="text"],
   margin-bottom: 8px;
   border-radius: 5px;
 }
+
 input[type="checkbox"] {
   margin: 10px;
   scale: 1.5;
@@ -342,10 +369,12 @@ input:hover,
 #other {
   margin: 12px 0 0;
 }
+
 textarea {
   margin: 0;
   max-width: 537px;
 }
+
 #send {
   width: 100%;
   padding: 20px;
@@ -359,8 +388,7 @@ textarea {
 /* media queries medium */
 
 /* For medium screens size from 1200px wide and bigger  */
-@media screen and (min-width: 1200px) {
-}
+@media screen and (min-width: 1200px) {}
 
 /* For medium screens size from 950px wide and smaller */
 @media screen and (max-width: 950px) {
@@ -437,7 +465,7 @@ textarea {
     display: grid;
   }
 
-  iframe {
+  .g-maps {
     width: 400px;
     height: 250px;
   }
@@ -446,7 +474,7 @@ textarea {
 /* For small screens size from 400px wide and smaller */
 
 @media screen and (max-width: 400px) {
-  iframe {
+  .g-maps {
     width: 254px;
     height: 150px;
   }
