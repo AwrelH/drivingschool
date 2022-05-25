@@ -228,6 +228,23 @@ flex: 1fr 1fr 1fr;
   
 }
 
+/* ____________________ generalinfo.html ____________________ */
+.good-to-know-text h1 {
+  font-size: 4rem;
+  text-align: center; 
+  text-decoration: underline; 
+}
+.good-to-know-text h3 {
+  font-size: 2rem;
+  
+}
+.good-to-know-text h2 {
+  text-align: center;
+  margin:0;
+}
+
+
+
 /* ____________________contact.html____________________ */
 .text-contact {
 }
