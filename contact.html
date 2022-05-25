@@ -1,100 +1,159 @@
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/2ae8405b0b.js" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-    <title>getyourdrivinglicense.com</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/2ae8405b0b.js" crossorigin="anonymous"></script>
+
+  <title>getyourdrivinglicense.com</title>
 </head>
 
-<!-- Contact form first part, contact information -->
-<div class="text-contact">
-  <section class="form-frame">
-    <form action="https://formdump.codeinstitute.net/" method="post">
-      <fieldset>
-        <legend class="form-title">Contact information</legend>
-        <label for="fname">First Name</label>
-        <input type="text" name="first_name" id="fname" required />
+<body>
 
-        <label for="lname">Last Name</label>
-        <input type="text" name="last_name" id="lname" />
+  <header>
+    <!-- Navigation bar en welcome message -->
+    <div id="welcome">
+      <h1>Welcome to GetYourDrivingLicense</h1>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">DrivingSchool</a></li>
+        <li><a href="offers.html">Our offers</a></li>
+        <li><a href="generalinfo.html">Good to know</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
 
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age" min="15" max="100" required />
+  </header>
+   <!-- Intro message for contact form -->
+   <div class="frame">
+    <div class="intro-form text-part">
+      <h2>Feel free to contact us</h2>
+      <p>
+        Our page is still under construction and may not answer all your
+        questions. So if you have any questions, or want to set up a date for
+        a meet and greet before we take it to the next stage, fill out the
+        form and we will contact you as soon we can.
+      </p>
 
-        <label for="email">Email</label
-        ><input type="email" name="email" id="email" required />
-      </fieldset>
-      <!-- contact form, second part regarding interest with checkbox and so on -->
-      <fieldset>
-        <legend class="form-title">What are you interested in?</legend>
-        <div>
-          <input
-            type="checkbox"
-            id="A1-A2-license"
-            name="want-to-learn"
-            value="A1-A2-license"
-          /><label for="A1-A2-license">A1-A2-license</label>
-        </div>
+      <p>
+        Your needs is important to us, therefor we will do all we can to help
+        you!
+      </p>
+    </div>
 
-        <div>
-          <input
-            type="checkbox"
-            id="B1-B2-license"
-            name="want-to-learn"
-            value="B1-B2-license"
-          /><label for="B1-B2-license">B1-B2-license</label>
-        </div>
+  <!-- Contact form first part, contact information -->
+  <div class="text-contact">
+    <section class="form-frame">
+      <form action="https://formdump.codeinstitute.net/" method="post">
+        <fieldset>
+          <legend class="form-title">Contact information</legend>
+          <label for="fname">First Name</label>
+          <input type="text" name="first_name" id="fname" required />
 
-        <div>
-          <input
-            type="checkbox"
-            id="C1-C2-license"
-            name="want-to-learn"
-            value="C1-C2-license"
-          /><label for="C1-C2-license">C1-C2-license</label>
-        </div>
+          <label for="lname">Last Name</label>
+          <input type="text" name="last_name" id="lname" />
 
-        <div>
-          <input
-            type="checkbox"
-            id="D-license"
-            name="want-to-learn"
-            value="D-license"
-          /><label for="D-license">D-license</label>
-        </div>
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" min="15" max="100" required />
 
-        <div>
-          <input
-            type="checkbox"
-            name="want-to-learn"
-            value="safety education"
-          /><label for="safety education">safety education</label>
-        </div>
+          <label for="email">Email</label><input type="email" name="email" id="email" required />
+        </fieldset>
+        <!-- contact form, second part regarding interest with checkbox and so on -->
+        <fieldset>
+          <legend class="form-title">What are you interested in?</legend>
+          <div>
+            <input type="checkbox" id="A1-A2-license" name="want-to-learn" value="A1-A2-license" /><label
+              for="A1-A2-license">A1-A2-license</label>
+          </div>
 
-        <div>
-          <input
-            type="checkbox"
-            name="want-to-learn"
-            value="refresh your driving skills"
-          /><label for="safety education">refresh your driving skills</label>
-        </div>
-        <div>
-          <p id="other">Any other questions?</p>
-          <textarea
-            name="want-to-learn"
-            id="write-something"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <button id="send" type="submit">
-          Click here to send
-          <i class="fa-solid fa-paper-plane"></i>
-        </button>
-      </fieldset>
-    </form>
-  </section>
+          <div>
+            <input type="checkbox" id="B1-B2-license" name="want-to-learn" value="B1-B2-license" /><label
+              for="B1-B2-license">B1-B2-license</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="C1-C2-license" name="want-to-learn" value="C1-C2-license" /><label
+              for="C1-C2-license">C1-C2-license</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="D-license" name="want-to-learn" value="D-license" /><label
+              for="D-license">D-license</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="want-to-learn" value="safety education" /><label for="safety education">safety
+              education</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="want-to-learn" value="refresh your driving skills" /><label
+              for="safety education">refresh your driving skills</label>
+          </div>
+          <div>
+            <p id="other">Any other questions?</p>
+            <textarea name="want-to-learn" id="write-something" cols="30" rows="10"></textarea>
+          </div>
+          <button id="send" type="submit">
+            Click here to send
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </fieldset>
+      </form>
+    </section>
+  </div>
 </div>
+  <!-- map and address section -->
+  <div id="map-section">
+    <div class="map-container">
+      <div class="address">
+        <table id="address">
+          <tr>
+            <th>Address:</th>
+            <td>FreedomRoad 21</td>
+          </tr>
+          <tr>
+            <th>Postcode:</th>
+            <td>212 12 NorthSouth</td>
+          </tr>
+          <tr>
+            <th>Phone:</th>
+            <td><a href="tel:+46701234567">+46 70 1234 567</a></td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td><a href="mailto:mail:drivingschool@GYDL.com">drivingschool@GYDL.com</a></td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2229.920069849883!2d18.167543631669552!3d59.16843577463374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f7c6292871887%3A0x7329f5d6e2ad58a8!2sBrandbergen%2C%20136%2060%20%C3%96sterhaninge%2C%20Sverige!5e0!3m2!1ssv!2sit!4v1652391079923!5m2!1ssv!2sit"
+          width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer and social media links -->
+  <footer>
+    <p>feel free to reach us on social media!</p>
+    <ul class="social-media">
+
+      <li><a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
+      </li>
+      <li><a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a target="_blank" href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
