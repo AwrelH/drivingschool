@@ -156,6 +156,77 @@ footer li {
 footer a {
   font-size: 3rem;
 }
+/* ____________________ offers.html ____________________ */
+
+/* Text-offer */
+.text-offer {
+  display: flex;
+  flex: 2;
+}
+.offer {
+  text-align: center;
+  max-width: 600px;
+  margin
+}
+
+.image-offers {
+  max-width: 400px;
+}
+progress {
+  scale:1.2;
+}
+/* packages offers */
+.packages {
+  display: flex;
+  justify-content: center;
+  padding:30px;
+flex: 1fr 1fr 1fr;
+}
+.silver,
+.gold,
+.platinum {
+    border:2px solid gold;
+  padding:5px;
+  text-align: center;
+  background-color: chocolate;
+  margin: 10px;
+
+}
+
+/* testamonial */
+.testomonial {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  
+  
+  
+}
+.flo {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  margin-left: 20px;
+  
+}
+
+.student-pic:first {
+  border-radius: 100%;
+  width:200px;
+  height: 200px;
+  float: inline-start;
+  margin-right:20px;
+  
+}
+.student-pic:last-of-type {
+  border-radius: 100%;
+  width:200px;
+  height: 200px;
+  float: right;
+  margin-right:20px;
+  
+}
 
 /* ____________________contact.html____________________ */
 .text-contact {
