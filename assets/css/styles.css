@@ -84,7 +84,6 @@ body {
   margin: 0 auto;
   display: grid;
   background-color: bisque;
-  padding: 20px 10px 0;
   gap: 20px;
 }
 
@@ -160,31 +159,51 @@ footer a {
 /* ____________________ offers.html ____________________ */
 
 /* Text-offer */
-.text-offer {
+.frame-offer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+.text-offer-1 {
+  position: relative;
+  background-image: url('../images/training.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  width: 100%;
+}
+
+.offer1 {
+  background-color: rgba(255, 228, 196, 0.5);
+  max-width: 500px;
+  padding: 10px;
+}
+
+.text-offer-2 {
   display: flex;
-  flex: 2;
+  flex:1;
+ 
 }
 
 .offer {
   text-align: center;
   max-width: 600px;
-  margin
+  flex: 1;
 }
 
 .image-offers {
   max-width: 400px;
 }
 
-progress {
-  scale: 1.2;
-}
+
 
 /* packages offers */
 .packages {
   display: flex;
   justify-content: center;
-  padding: 30px;
-  flex: 1fr 1fr 1fr;
+  padding: 5px;
+  flex: 1;
 }
 
 .silver,
@@ -195,6 +214,8 @@ progress {
   text-align: center;
   background-color: chocolate;
   margin: 10px;
+  flex: 1;
+  flex-wrap: wrap;
 
 }
 
@@ -205,11 +226,8 @@ progress {
   flex-wrap: wrap;
   padding: 50px;
 
-
-
 }
-
-.flo {
+.quote {
   display: flex;
   align-items: center;
   width: 800px;
@@ -217,11 +235,26 @@ progress {
 
 }
 
+
+.quote-quote::before {
+  content: open-quote;
+  font-size: 3rem;
+  line-height: 0;
+  position:absolute;
+  font-family: "Franklin Gothic Medium", sans-serif;
+
+}
+.quote-quote::after {
+  content: close-quote;
+  font-size: 3rem;
+  line-height: 0;
+  position:absolute;
+}
+
 .student-pic:first {
   border-radius: 100%;
   width: 200px;
   height: 200px;
-  float: inline-start;
   margin-right: 20px;
 
 }
@@ -230,7 +263,6 @@ progress {
   border-radius: 100%;
   width: 200px;
   height: 200px;
-  float: right;
   margin-right: 20px;
 
 }
@@ -261,7 +293,7 @@ progress {
 
 
 /* ____________________contact.html____________________ */
-.text-contact {}
+
 
 .form-frame {
   max-width: 800px;
@@ -461,14 +493,17 @@ textarea {
     font-size: 1.4rem;
   }
 
-  .map-container {
-    display: grid;
+  .map-container,
+  .text-offer-2,
+  .packages {
+    flex-direction: column;
   }
 
   .g-maps {
     width: 400px;
     height: 250px;
   }
+
 }
 
 /* For small screens size from 400px wide and smaller */
