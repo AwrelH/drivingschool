@@ -89,7 +89,6 @@ body {
 
 img {
   max-width: 100%;
-  aspect-ratio:calc( attr(width) / attr(height));
   border-radius: 10px;
 }
 
