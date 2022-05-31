@@ -125,7 +125,7 @@ img {
   font-size: 1.2rem;
   font-family: sans-serif;
   padding: 10px;
-  background-color: rgba(211, 211, 211, 0.2);
+  background-color: #F1F3F4;
   width: 100%;
 }
 
@@ -280,6 +280,7 @@ footer a {
 }
 
 .good-to-know-text h1 {
+  margin-top:0;
   font-size: 4rem;
   text-align: center;
   text-decoration: underline;
@@ -300,6 +301,16 @@ footer a {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+details {
+  
+  border-radius: 4px;
+  padding: .5em .5em 0;
+}
+summary {
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
 }
 
 
@@ -353,7 +364,7 @@ textarea {
 #send {
   width: 100%;
   padding: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: inset;
   border-radius: 20px;
   background-color: #91e0c6;
@@ -466,15 +477,11 @@ textarea {
   .quote-quote {
     float: right;
   }
-
-  .quote p,
-  .text-offer-1 p,
-  .offer p,
-  .packages p {
-    font-size: 1rem;
-  }
-
-  .map-container,
+.frame p,
+.frame-offer p {
+  font-size: 1rem;
+}
+   .map-container,
   .text-offer-2,
   .packages {
     flex-direction: column;
@@ -491,6 +498,9 @@ textarea {
 
   .good-to-know-text h1 {
     font-size: 2rem;
+  }
+  #send {
+    font-size: 1rem;
   }
 }
 
