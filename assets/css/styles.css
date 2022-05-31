@@ -82,14 +82,14 @@ body {
 .frame {
   max-width: 1200px;
   margin: 0 auto;
-  /* display: grid; */
+  
   background-color: bisque;
   padding-top: 20px;
 }
 
 img {
   max-width: 100%;
-  aspect-ratio: attr(width) / attr(height);
+  aspect-ratio:calc( attr(width) / attr(height));
   border-radius: 10px;
 }
 
