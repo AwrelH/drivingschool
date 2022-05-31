@@ -82,9 +82,9 @@ body {
 .frame {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
+  /* display: grid; */
   background-color: bisque;
-  gap: 20px;
+  padding-top: 20px;
 }
 
 img {
@@ -116,7 +116,7 @@ img {
   justify-content: space-around;
 }
 
-iframe {
+.g-maps {
   width: 600px;
   height: 400px;
 }
@@ -172,6 +172,7 @@ footer a {
   background-size: auto;
   background-position: right;
   width: 100%;
+  height: 350px;
 }
 
 .offer1 {
@@ -182,8 +183,7 @@ footer a {
 
 .text-offer-2 {
   display: flex;
-  flex:1;
- 
+  flex: 1;
 }
 
 .offer {
@@ -196,8 +196,6 @@ footer a {
   max-width: 400px;
 }
 
-
-
 /* packages offers */
 .packages {
   display: flex;
@@ -209,14 +207,19 @@ footer a {
 .silver,
 .gold,
 .platinum {
-  border: 2px solid gold;
   padding: 5px;
   text-align: center;
-  background-color: chocolate;
+  background-color: #FFB027;
   margin: 10px;
   flex: 1;
   flex-wrap: wrap;
-
+  line-height: 1rem;
+}
+.packages button {
+  padding:10px;
+  width: 100%;
+  font-size: 1rem;
+  margin-top:20px;
 }
 
 /* testamonial */
@@ -225,30 +228,34 @@ footer a {
   justify-content: center;
   flex-wrap: wrap;
   padding: 50px;
-
 }
+
+.seperator {
+  border-bottom: 10px dotted rgba(0, 0, 0, 0.3);
+  height: 1px;
+  width: 60%;
+  margin: 50px auto;
+}
+
 .quote {
   display: flex;
   align-items: center;
   width: 800px;
   margin-left: 20px;
-
 }
-
 
 .quote-quote::before {
   content: open-quote;
   font-size: 3rem;
   line-height: 0;
-  position:absolute;
+  position: absolute;
   font-family: "Franklin Gothic Medium", sans-serif;
-
 }
+
 .quote-quote::after {
   content: close-quote;
   font-size: 3rem;
-  line-height: 0;
-  position:absolute;
+  position: absolute;
 }
 
 .student-pic:first {
@@ -268,6 +275,10 @@ footer a {
 }
 
 /* ____________________ generalinfo.html ____________________ */
+.good-to-know-text {
+  padding: 10px !important;
+}
+
 .good-to-know-text h1 {
   font-size: 4rem;
   text-align: center;
@@ -330,7 +341,7 @@ label {
   margin-bottom: 4px;
 }
 
-#other {
+#textarea-title {
   margin: 12px 0 0;
 }
 
@@ -340,7 +351,7 @@ textarea {
 }
 
 #send {
-  width: 70%;
+  width: 100%;
   padding: 20px;
   font-size: 2rem;
   border: inset;
@@ -348,7 +359,6 @@ textarea {
   background-color: #91e0c6;
   margin-top: 10px;
 }
-
 .intro-form {
   margin: 0 auto;
   max-width: 800px;
@@ -360,62 +370,6 @@ textarea {
   background-color: rgb(182, 182, 182, 0.5);
 }
 
-.text-contact {}
-
-.form-frame {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: bisque;
-}
-
-.form-title {
-  font-size: 1.5rem;
-  font-family: Lato, sans-serif;
-}
-
-label {
-  font-size: 1.2rem;
-  margin-bottom: 4px;
-}
-
-input[type="text"],
-[type="email"],
-[type="number"] {
-  display: flex;
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 8px;
-  border-radius: 5px;
-}
-
-input[type="checkbox"] {
-  margin: 10px;
-  scale: 1.5;
-}
-
-input:hover,
-#send:hover {
-  background-color: rgb(214, 238, 230);
-}
-
-#other {
-  margin: 12px 0 0;
-}
-
-textarea {
-  margin: 0;
-  max-width: 537px;
-}
-
-#send {
-  width: 100%;
-  padding: 20px;
-  font-size: 2rem;
-  border: inset;
-  border-radius: 20px;
-  background-color: #91e0c6;
-  margin-top: 10px;
-}
 
 /* media queries medium */
 
@@ -447,6 +401,18 @@ textarea {
 
   #welcome h1 {
     font-size: 2.5rem;
+  }
+
+  .good-to-know-text h1 {
+    font-size: 3rem;
+  }
+
+  .good-to-know-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .good-to-know-text p {
+    font-size: 1rem;
   }
 }
 
@@ -493,6 +459,21 @@ textarea {
     font-size: 1.4rem;
   }
 
+  .quote {
+    flex-wrap: wrap;
+  }
+
+  .quote-quote {
+    float: right;
+  }
+
+  .quote p,
+  .text-offer-1 p,
+  .offer p,
+  .packages p {
+    font-size: 1rem;
+  }
+
   .map-container,
   .text-offer-2,
   .packages {
@@ -504,6 +485,13 @@ textarea {
     height: 250px;
   }
 
+  .student-pic {
+    scale: 0.8;
+  }
+
+  .good-to-know-text h1 {
+    font-size: 2rem;
+  }
 }
 
 /* For small screens size from 400px wide and smaller */
