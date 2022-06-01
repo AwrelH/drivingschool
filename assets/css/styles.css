@@ -338,7 +338,7 @@ input[type="text"],
 
 input[type="checkbox"] {
   margin: 10px;
-  scale: 1.5;
+  transform: scale(1.5);
 }
 
 input:hover {
@@ -499,7 +499,7 @@ textarea {
   }
 
   .student-pic {
-    scale: 0.8;
+    transform:scale(0.8);
   }
 
   .good-to-know-text h1 {
