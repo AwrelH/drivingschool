@@ -82,7 +82,7 @@ body {
 .frame {
   max-width: 1200px;
   margin: 0 auto;
-  
+
   background-color: bisque;
   padding-top: 20px;
 }
@@ -215,11 +215,12 @@ footer a {
   flex-wrap: wrap;
   line-height: 1rem;
 }
+
 .packages button {
-  padding:10px;
+  padding: 10px;
   width: 100%;
   font-size: 1rem;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 /* testamonial */
@@ -280,7 +281,7 @@ footer a {
 }
 
 .good-to-know-text h1 {
-  margin-top:0;
+  margin-top: 0;
   font-size: 4rem;
   text-align: center;
   text-decoration: underline;
@@ -302,11 +303,13 @@ footer a {
   justify-content: center;
   margin-top: 20px;
 }
+
 details {
-  
+
   border-radius: 4px;
   padding: .5em .5em 0;
 }
+
 summary {
   font-weight: bold;
   margin: -.5em -.5em 0;
@@ -370,6 +373,7 @@ textarea {
   background-color: #91e0c6;
   margin-top: 10px;
 }
+
 .intro-form {
   margin: 0 auto;
   max-width: 800px;
@@ -477,11 +481,13 @@ textarea {
   .quote-quote {
     float: right;
   }
-.frame p,
-.frame-offer p {
-  font-size: 1rem;
-}
-   .map-container,
+
+  .frame p,
+  .frame-offer p {
+    font-size: 1rem;
+  }
+
+  .map-container,
   .text-offer-2,
   .packages {
     flex-direction: column;
@@ -499,6 +505,7 @@ textarea {
   .good-to-know-text h1 {
     font-size: 2rem;
   }
+
   #send {
     font-size: 1rem;
   }
