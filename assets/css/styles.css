@@ -355,8 +355,11 @@ label {
   margin-bottom: 4px;
 }
 
-#textarea-title {
-  margin: 12px 0 0;
+.other-questions {
+ display:flex;
+ flex-direction: column;
+ margin-top: 20px;
+ 
 }
 
 textarea {
