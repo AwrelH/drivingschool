@@ -72,12 +72,12 @@ I had a few bugs during my project, one of them was the open and close-quote tha
 
 Another issue that I had when making my index.html responsive while shrinking it, I would have an image appearing first instead of a text on the second section. Now I could've just change places in the HTML, the text and the image, but I would rather keep my design so after some time, googling to find a solution, I landed on grid and order to manipulate this issue. 
 
-One of the last bugs that I was confronted with was with aspect-ratio of my index-images. During the accessibility tests I wanted to improve my performance score, and recommendations from the software introduced me to add height and width in the HTML and some CSS code. That solution cause my images to fault and after some tries I removed this implementation and the performance score when up. 
+One of the last bugs that I was confronted with was with aspect-ratio of my index-images. During the accessibility tests I wanted to improve my performance score, and recommendations from the software, introduced me to add height and width in the HTML and some CSS code. That solution cause my images to fault and after some tries I removed this implementation and the performance score when up. 
 
 # Future features
 
 Ideas that could be added to this project:
-- login page for student, with additional study material
+- login page for students, with additional study material, quiz.git add
 - make a hamburger of the navigation bar when going down some screen sizes
 - buy packages from the site
 - add graphics or text when the driving school is open
@@ -87,7 +87,26 @@ Ideas that could be added to this project:
 ---
 ## Credits
 
+### Content and tools
+General code (https://www.w3schools.com/), (https://csslayout.io/)
+
+Some colour related sites and tools (https://mycolor.space/), (https://www.colorzilla.com/), (http://colormind.io/), 
+
+Online image related sites and tools (https://www.iloveimg.com/), 
+
+Basamiq Wireframes (https://balsamiq.com/)
+
+Font-paring (https://www.fontpair.co/fonts/aleo), (https://fontjoy.com/)
+
+My mentor Spence and his homepage with related links (https://5pence.net/some-handy-links-for-basic-website-development/)
+
+Trafikverket, how to obtain a swedish license (https://bransch.trafikverket.se/en/startpage/driving-licence/obtaining-a-swedish-driving-licence/)
+
+MyDrivingAcademy, how to obtain a swedish license  (https://mydrivingacademy.com/2019/02/11/getting-swedish-driving-license/)
+
+and a couple driving schools that inspired me to create my project.
 
 
 
-### Media
+
+
