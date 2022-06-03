@@ -81,7 +81,6 @@ body {
 .frame {
   max-width: 1200px;
   margin: 0 auto;
-
   background-color: bisque;
   padding-top: 20px;
 }
@@ -125,7 +124,7 @@ img {
   font-family: sans-serif;
   padding: 10px;
   background-color: #F1F3F4;
-  width: 100%;
+  
 }
 
 th {
@@ -148,7 +147,6 @@ footer ul {
 
 footer li {
   list-style-type: none;
-  margin: 0;
 }
 
 footer a {
@@ -165,13 +163,18 @@ footer a {
 }
 
 .text-offer-1 {
-  position: relative;
   background-image: url('../images/training.png');
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right;
-  width: 100%;
   height: 350px;
+}
+
+.seperator {
+  border-bottom: 10px dotted rgba(0, 0, 0, 0.3);
+  height: 1px;
+  width: 60%;
+  margin: 50px auto;
 }
 
 .offer1 {
@@ -182,8 +185,7 @@ footer a {
 
 .text-offer-2 {
   display: flex;
-  flex: 1;
-}
+ }
 
 .offer {
   text-align: center;
@@ -191,16 +193,13 @@ footer a {
   flex: 1;
 }
 
-.image-offers {
-  max-width: 400px;
-}
-
 /* packages offers */
 .packages {
   display: flex;
-  justify-content: center;
-  padding: 5px;
-  flex: 1;
+  padding: 5px; 
+}
+.packages h3 {
+  text-decoration: 2px underline;
 }
 
 .silver,
@@ -211,14 +210,13 @@ footer a {
   background-color: #FFB027;
   margin: 10px;
   flex: 1;
-  flex-wrap: wrap;
   line-height: 1rem;
 }
 
 .packages button {
   padding: 10px;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 20px;
 }
 
@@ -230,25 +228,18 @@ footer a {
   padding: 50px;
 }
 
-.seperator {
-  border-bottom: 10px dotted rgba(0, 0, 0, 0.3);
-  height: 1px;
-  width: 60%;
-  margin: 50px auto;
-}
+
 
 .quote {
   display: flex;
   align-items: center;
   width: 800px;
-  margin-left: 20px;
 }
 
 .quote-quote::before {
   content: open-quote;
   font-size: 3rem;
   line-height: 0;
-  position: absolute;
   font-family: "Franklin Gothic Medium", sans-serif;
 }
 
@@ -256,18 +247,19 @@ footer a {
   content: close-quote;
   font-size: 3rem;
   position: absolute;
+  font-family: "Franklin Gothic Medium", sans-serif;
 }
 
 .student-pic:first {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   margin-right: 20px;
-
-}
+  
+  }
 
 .student-pic:last-of-type {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   margin-right: 20px;
