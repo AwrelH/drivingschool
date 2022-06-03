@@ -52,7 +52,6 @@ body {
 .nav-bar ul {
   display: flex;
   margin: 0 auto;
-  justify-content: space-evenly;
   width: 100%;
   max-width: 1200px;
   font-family: Lato, sans-serif;
@@ -389,7 +388,7 @@ textarea {
 }
 
 
-/* media queries medium */
+/* ##### media queries medium ##### */
 
 /* For medium screens size from 1200px wide and bigger  */
 @media screen and (min-width: 1200px) {}
