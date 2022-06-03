@@ -21,7 +21,8 @@ On each page you have a welcome title, a navigation bar, location information an
 
 ### Navigation
 
-The navigation bar is centered with space-around each page-link across the screen on devices that are bigger than 650px, below that the links will stack on top of each other. 
+The navigation bar is centered with space-around each page-link across the screen on devices that are bigger than 650px, below that the links will stack on top of each other. Active link has a border-bottom in the color red. Also a hover effect is added. 
+![the navigation bar](assets/images/readme_images/navbar.png)
 
 **DrivingSchool**- is the first page, the homepage.     
 **Our Offers** - is the page where you can read on the offers that are available.   
@@ -31,12 +32,24 @@ The navigation bar is centered with space-around each page-link across the scree
 Style wise the font-size is a bit larger for an easy layout and accessibility. 
 
 ### map area and footer
-These are located in the bottom of each page. The point is to repeat the school's location and social media presence to potential costumer. Location is fictive, and the social media symbols will only take you their official homepages. 
+These are located in the bottom of each page. The point is to repeat the school's location and social media presence to potential costumers. Location is fictive, and the social media symbols will only take you their official homepages. The footer spans the whole width of the screen.
+![a screenshot of the map section when screen is around 800px](assets/images/readme_images/mapsection.png)
 
 ### Main content
 the index page consist of an introduction of the school and the goal is to paint a picture of accessing freedom when getting a license via the school and classroom and its teachers. 
+
 the second page is where the offer packages are presented and also two testimonials about how great school it is. 
-In the 'good to know' page you have a roadmap on how to get your Swedish license and also a few additional links and a video. And on the last page you have a form to fill with contact information and what kind of license or education you are interested in. 
+
+![A screenshot of the packages](assets/images/readme_images/packages.png)
+
+In the 'good to know' page you have a roadmap on how to get your Swedish license and also a few additional links and a video.
+
+![A screenshot of the good to know page](assets/images/readme_images/good-to-know.png)
+
+ And on the last page you have a form to fill with contact information and what kind of license or education you are interested in.
+ 
+ ![A screenshot of the form](assets/images/readme_images/form.png)
+
 
 ## Colours
 
@@ -45,11 +58,23 @@ The colours that appear in this home page are following:
 
 
 
-# Testing and local deployment
+# Testing and deployment
 
 I have mostly used Firefox with my testing since it's my primary browser, but I also used Google Chrome. Used an extension named Live Server to see how my project would evolve through each new segment of code. 
 
 With the dev-tools and media queries I made sure my project was responsive and did what I expected it to do when going from bigger to a smaller screen. Made sure links open correctly and in new tab and imagery was responsive according to my expectations. 
+
+### Deployment and git
+
+Via git and commits I documented my changes going forward in my project. The main commands that were used: git add . , git commit -m, and git push. 
+
+I used Github pages to deploy my project. 
+1. Get to the site's repository, and click it.
+2. In the navigation bar click on *Settings*.
+3. Click on *Pages*
+4. Under *Source* you can change Branch from none to main.
+5. Once that is changed, the page will provide a link to the site. 
+ I used git to commit my changes of the project, tried to not 
 
 ## Validator testing
 
@@ -77,22 +102,22 @@ One of the last bugs that I was confronted with was with aspect-ratio of my inde
 # Future features
 
 Ideas that could be added to this project:
-- login page for students, with additional study material, quiz.git add
-- make a hamburger of the navigation bar when going down some screen sizes
-- buy packages from the site
-- add graphics or text when the driving school is open
-- sections for different type of vehicles 
-- booking of lessons in a calendar
+- Login page for students, with additional study material, quiz.
+- Make a hamburger of the navigation bar when going down some screen sizes
+- Buy packages from the site
+- Add graphics or text when the driving school is open
+- Sections for different type of vehicles 
+- Booking of lessons in a calendar
 
 ---
 ## Credits
 
 ### Content and tools
-General code (https://www.w3schools.com/), (https://csslayout.io/)
+General code and inspiration (https://www.w3schools.com/), (https://csslayout.io/)
 
 Some colour related sites and tools (https://mycolor.space/), (https://www.colorzilla.com/), (http://colormind.io/), 
 
-Online image related sites and tools (https://www.iloveimg.com/), 
+Online image related sites and tools (https://www.iloveimg.com/),(https://www.pexels.com/)
 
 Basamiq Wireframes (https://balsamiq.com/)
 
@@ -100,13 +125,11 @@ Font-paring (https://www.fontpair.co/fonts/aleo), (https://fontjoy.com/)
 
 My mentor Spence and his homepage with related links (https://5pence.net/some-handy-links-for-basic-website-development/)
 
-Trafikverket, how to obtain a swedish license (https://bransch.trafikverket.se/en/startpage/driving-licence/obtaining-a-swedish-driving-licence/)
+Trafikverket, how to obtain a Swedish license (https://bransch.trafikverket.se/en/startpage/driving-licence/obtaining-a-swedish-driving-licence/)
 
-MyDrivingAcademy, how to obtain a swedish license  (https://mydrivingacademy.com/2019/02/11/getting-swedish-driving-license/)
+MyDrivingAcademy, how to obtain a Swedish license (https://mydrivingacademy.com/2019/02/11/getting-swedish-driving-license/)
 
-and a couple driving schools that inspired me to create my project.
-
-
+And a couple driving schools that inspired me to create my project.
 
 
 
