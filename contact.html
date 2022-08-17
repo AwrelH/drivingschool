@@ -51,9 +51,9 @@
     <!-- Contact form first part, contact information -->
     <div class="text-contact">
       <div class="form-frame">
-        <form action="https://formdump.codeinstitute.net/" method="post">
+        <form>
           <fieldset>
-            <legend class="form-title">Contact information</legend>
+            <legend onfocus="" class="form-title">Contact information</legend>
             <label for="fname">First Name</label>
             <input type="text" name="first_name" id="fname" required />
 
@@ -105,7 +105,7 @@
               <textarea name="other-questions" id="other-questions" cols="30" rows="10"></textarea>
 
             </div>
-            <button id="send" type="submit">
+            <button id="send">
               Click here to send
               <i class="fa-solid fa-paper-plane"></i>
             </button>
@@ -116,7 +116,7 @@
   </div>
 
     <!-- map and address section -->
-  <div id="map-section">
+  <!-- <div id="map-section">
     <div class="map-container">
       <div class="address">
         <table id="address">
@@ -146,7 +146,7 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -164,5 +164,20 @@
       </li>
     </ul>
   </footer>
+
+  <script>
+    const numbers = [0,1,2,3,4,5,6,7,8,9]
+    let input = document.querySelector('#fname')
+    let fname = input.value
+    let submit = document.querySelector("#send")
+    submit.addEventListener('click', validation)
+    function validation() {
+
+      if(fname.match(numbers)) {
+        console.log('invalid input, try again r2d2!')
+      }
+    }
+
+ </script>
 </body>
 </html>

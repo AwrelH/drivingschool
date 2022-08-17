@@ -344,6 +344,9 @@ input[type="checkbox"] {
 input:hover {
     background-color: rgb(176, 241, 220);
 }
+.input:invalid:hover {
+    background-color:brown;
+}
 
 .form-title {
     font-size: 1.5rem;
@@ -435,7 +438,8 @@ textarea {
         width: 100%;
         max-width: 650px;
     }
-/* Make sure text section 2 will come first before picture in index.html */
+
+    /* Make sure text section 2 will come first before picture in index.html */
     .freedom-section .skip-order {
         display: grid;
         order: -1;
@@ -444,8 +448,9 @@ textarea {
     .text-part {
         padding: 0;
     }
+
     .intro-form {
-        padding:10px;
+        padding: 10px;
     }
 }
 
@@ -464,12 +469,11 @@ textarea {
         flex-wrap: wrap;
     }
 
-     .frame p,
+    .frame p,
     .frame-offer p {
         font-size: 1rem;
     }
 
-    
     .text-offer-2,
     .packages {
         flex-direction: column;
